@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link href="resources/css/tailwind.css" rel="stylesheet">
+
 
 </head>
 
@@ -41,15 +41,18 @@
         <div id="projects" class="slide three"></div>
         <div id="tools" class="slide four"></div>
         <div id="contact" class="slide five">
-            <section class="bg-black">
+            <section class="bg-green-400">
                 <div class="container">
-                    <div class="contactinfo rounded-lg">
+                    <div class="contactinfo  reveal-1 rounded-lg">
                         <div>
                             <h2>Contact Info</h2>
                             <ul class="info py-2">
                                 <li>
-                                    <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M8.53162 2.93677C10.7165 1.66727 13.402 1.68946 15.5664 2.99489C17.7095 4.32691 19.012 6.70418 18.9998 9.26144C18.95 11.8019 17.5533 14.19 15.8075 16.0361C14.7998 17.1064 13.6726 18.0528 12.4488 18.856C12.3228 18.9289 12.1848 18.9777 12.0415 19C11.9036 18.9941 11.7693 18.9534 11.6508 18.8814C9.78243 17.6746 8.14334 16.134 6.81233 14.334C5.69859 12.8314 5.06584 11.016 5 9.13442C4.99856 6.57225 6.34677 4.20627 8.53162 2.93677ZM9.79416 10.1948C10.1617 11.1008 11.0292 11.6918 11.9916 11.6918C12.6221 11.6964 13.2282 11.4438 13.6748 10.9905C14.1214 10.5371 14.3715 9.92064 14.3692 9.27838C14.3726 8.29804 13.7955 7.41231 12.9073 7.03477C12.0191 6.65723 10.995 6.86235 10.3133 7.55435C9.63159 8.24635 9.42664 9.28872 9.79416 10.1948Z" fill="#130F26"/>
+                                    <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                               xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M8.53162 2.93677C10.7165 1.66727 13.402 1.68946 15.5664 2.99489C17.7095 4.32691 19.012 6.70418 18.9998 9.26144C18.95 11.8019 17.5533 14.19 15.8075 16.0361C14.7998 17.1064 13.6726 18.0528 12.4488 18.856C12.3228 18.9289 12.1848 18.9777 12.0415 19C11.9036 18.9941 11.7693 18.9534 11.6508 18.8814C9.78243 17.6746 8.14334 16.134 6.81233 14.334C5.69859 12.8314 5.06584 11.016 5 9.13442C4.99856 6.57225 6.34677 4.20627 8.53162 2.93677ZM9.79416 10.1948C10.1617 11.1008 11.0292 11.6918 11.9916 11.6918C12.6221 11.6964 13.2282 11.4438 13.6748 10.9905C14.1214 10.5371 14.3715 9.92064 14.3692 9.27838C14.3726 8.29804 13.7955 7.41231 12.9073 7.03477C12.0191 6.65723 10.995 6.86235 10.3133 7.55435C9.63159 8.24635 9.42664 9.28872 9.79416 10.1948Z"
+      fill="#130F26"/>
 <ellipse opacity="0.4" cx="12" cy="21" rx="5" ry="1" fill="#130F26"/>
 </svg>
 </span>
@@ -90,7 +93,6 @@
                                 </a></li>
 
 
-
                             <li><a href="https://github.com/samsampanda">
                                     <svg width="40" height="40" viewBox="0 0 16 16" fill="black"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -102,7 +104,7 @@
                         </ul>
 
                     </div>
-                    <div class="contactForm rounded-lg">
+                    <div class="contactForm rounded-lg reveal-2">
 
                         <div class="formBox">
                             <div class="inputBox w50 pt-4">
@@ -184,7 +186,7 @@
     }
 
     .five {
-        background: black;
+        background: #1a202c;
     }
 
     section {
@@ -193,6 +195,8 @@
         align-items: center;
         display: flex;
         min-height: 100vh;
+        background: blue;
+
 
     }
 
@@ -203,6 +207,7 @@
         min-height: 550px;
         display: flex;
         z-index: 1000;
+
     }
 
     section .container .contactinfo {
@@ -386,6 +391,24 @@
         background: #ff568c;
     }
 
+    .reveal-1  {
+        opacity: 0;
+        transform: translate3d(0,-300px,0);
+        transition-delay: 2.5s;
+    }
+
+    .reveal-2 {
+        opacity: 0;
+        transform: translate3d(800px,0,0);
+        transition-delay: 0.8s;
+    }
+
+    .reveal-visible {
+        opacity: 1;
+        transform: translateX(0);
+        transition: 2s cubic-bezier(.5, 0, 0, 1);
+    }
+
     .outer-wrapper {
         width: 100vh;
         height: 100vw;
@@ -456,6 +479,40 @@
 
 
 </style>
+<script>
+
+    const ratio = 0.1
+
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: ratio
+    }
+
+    const handleIntersect = function (entries, observer) {
+        entries.forEach(function (entry) {
+            if (entry.intersectionRatio > ratio) {
+                entry.target.classList.add('reveal-visible')
+                observer.unobserve(entry.target)
+            } else {
+
+            }
+
+        })
+
+        console.log('handleIntersect')
+    }
+
+    const observer = new IntersectionObserver(handleIntersect, options);
+    document.querySelectorAll('.reveal-2').forEach(function (r) {
+        observer.observe(r)
+    })
+    document.querySelectorAll('.reveal-1').forEach(function (a) {
+        observer.observe(a)
+    })
+
+
+</script>
 
 </body>
 </html>
