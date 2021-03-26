@@ -2,6 +2,7 @@
 
 @section('content')
 
+
     <nav class="main-nav">
         <ul class="ul__first relative">
             <li id="logo">
@@ -17,38 +18,165 @@
         </ul>
     </nav>
     <canvas id="canvas3d" class="absolute"></canvas>
-    <div class="outer-wrapper ">
-        <div class="wrapper ">
 
-            <div id="home" class="slide one flex  ">
-                <p class="relative bg-white rounded-lg px-16 py-8 text-4xl self-center mx-auto">Voici mon accueil de BATARD </p>
+    <div class="outer-wrapper ">
+
+        <div class="wrapper">
+
+
+            <div id="home" class="slide one flex  bg-blue-200">
+                <div class="cursor ">
+                </div>
+                <p class="relative bg-white rounded-lg px-16 py-8 text-4xl self-center mx-auto">Voici mon accueil de
+                    BATARD </p>
             </div>
 
-            <div id="resume" class="slide two flex">
+            <div id="resume" class="slide two flex bg-blue-400">
                 <p class="relative bg-white rounded-lg px-16 py-8 text-4xl self-center mx-auto">La je parle de moi </p>
 
             </div>
 
             <div id="projects" class="slide three flex">
                 <p class="relative bg-white rounded-lg px-16 py-8 text-4xl self-center mx-auto">Mes projets </p>
-
             </div>
 
-            <div id="tools" class="slide four flex">
-                <p class="relative bg-white rounded-lg px-16 py-8 text-4xl self-center mx-auto">Mes outils</p>
 
+            <!-- Slide Tools -->
+            <div id="tools" class="slide four flex">
+
+                <div class="relative   text-4xl w-full h-full self-center mx-auto flex">
+                    <div class="glide self-center mx-auto ">
+                        <div class="glide__track relative" data-glide-el="track">
+                            <ul class="glide__slides  ">
+                                <li class="glide__slides relative  flex ">
+                                    <div class="mx-auto  self-center ">
+                                        <img
+                                            src="/img/figma.jpeg"
+                                            class=" h-64   right-0  object-cover flex rounded-tr-xl rounded-tl-xl"
+                                            alt="">
+                                        <div
+                                            class=" h-64 bg-white opacity-75 rounded-br-xl rounded-bl-xl  text-center  ">
+                                            FIGMA
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slides relative mx-auto flex ">
+                                    <div class="mx-auto  self-center ">
+                                        <img
+                                            src="/img/spline.jpg"
+                                            class=" h-64  right-0  object-cover flex rounded-tr-xl rounded-tl-xl"
+                                            alt="">
+                                        <div
+                                            class=" h-64 bg-white  opacity-75  rounded-br-xl rounded-bl-xl text-center">
+                                            SPLINE
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slides relative mx-auto flex ">
+                                    <div class="mx-auto  self-center ">
+                                        <img
+                                            src="/img/css.jpg"
+                                            class=" h-64  right-0  object-cover flex rounded-tr-xl rounded-tl-xl"
+                                            alt="">
+                                        <div
+                                            class=" h-64 bg-white  opacity-75  rounded-br-xl rounded-bl-xl text-center">
+                                            CSS
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slides relative mx-auto flex ">
+                                    <div class="mx-auto  self-center ">
+                                        <img
+                                            src="/img/html.jpg"
+                                            class=" h-64  right-0  object-cover flex rounded-tr-xl rounded-tl-xl"
+                                            alt="">
+                                        <div
+                                            class=" h-64 bg-white  opacity-75 rounded-br-xl rounded-bl-xl text-center ">
+                                            HTML
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slides relative mx-auto flex ">
+                                    <div class="mx-auto  self-center ">
+                                        <img
+                                            src="/img/js.jpg"
+                                            class=" h-64  right-0  object-cover flex rounded-tr-xl rounded-tl-xl"
+                                            alt="">
+                                        <div
+                                            class=" h-64 bg-white  opacity-75  rounded-br-xl rounded-bl-xl text-center">
+                                            JAVASCRIPT
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slides relative mx-auto flex ">
+                                    <div class="mx-auto  self-center ">
+                                        <img
+                                            src="/img/php.jpg"
+                                            class=" h-64  right-0  object-cover flex rounded-tr-xl rounded-tl-xl"
+                                            alt="">
+                                        <div
+                                            class=" h-64 bg-white  opacity-75  rounded-br-xl rounded-bl-xl text-center">
+                                            PHP
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slides relative mx-auto flex ">
+                                    <div class="mx-auto  self-center ">
+                                        <img
+                                            src="/img/laravel.jpg"
+                                            class=" h-64  right-0  object-cover flex rounded-tr-xl rounded-tl-xl"
+                                            alt="">
+                                        <div
+                                            class=" h-64 bg-white  opacity-75  rounded-br-xl rounded-bl-xl text-center ">
+                                            LARAVEL
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slides relative mx-auto flex ">
+                                    <div class="mx-auto  self-center ">
+                                        <img
+                                            src="/img/nuxt.jpg"
+                                            class=" h-64  right-0  object-cover flex rounded-tr-xl rounded-tl-xl"
+                                            alt="">
+                                        <div
+                                            class=" h-64 bg-white  opacity-75  rounded-br-xl rounded-bl-xl text-center ">
+                                            NUXT
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="glide__slides relative mx-auto flex ">
+                                    <div class="mx-auto  self-center ">
+                                        <img
+                                            src="/img/Tailwindcss.jpg"
+                                            class=" h-64  right-0  object-cover flex rounded-tr-xl rounded-tl-xl"
+                                            alt="">
+                                        <div
+                                            class=" h-64 bg-white opacity-75  rounded-br-xl rounded-bl-xl text-center ">
+                                            TAILWINDCSS
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Slide 5 -->
             <div id="contact" class="slide five">
                 <section class="">
                     <div class="container">
-                        <div class="contactinfo  reveal-1 rounded-lg">
+                        <div class="contactinfo  reveal-1 rounded-xl">
                             <div>
                                 <h2>Contact Info</h2>
                                 <ul class="info py-2">
-                                    <li>
-                                    <span>
+                                    <li class="flex">
+                                    <span class="flex self-center">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -57,7 +185,10 @@
                                         <ellipse opacity="0.4" cx="12" cy="21" rx="5" ry="1" fill="#130F26"/>
                                         </svg>
                                         </span>
-                                        <span>Je suis sur la 🌎</span>
+                                        <span class="text-1xl flex self-center">Sur la
+                                            </span>
+                                        <p class=" flex text-4xl pl-2 opacity-25 hover:opacity-75">🌎</p>
+
                                     </li>
                                     <li>
                                     <span>
@@ -110,7 +241,7 @@
                             </ul>
 
                         </div>
-                        <div class="contactForm rounded-lg reveal-2">
+                        <div class="contactForm rounded-xl reveal-2">
 
                             <form class="formBox" id="Contact" action="https://formspree.io/f/xbjqrkvo" method="POST">
                                 <div class="inputBox  w50 pt-4">
@@ -147,7 +278,8 @@
         </div>
     </div>
 
-    <script>
+    <script async>
+
 
         // five slide
 
@@ -180,8 +312,21 @@
         })
 
 
+        // Carousel
+        const config = {
+            type: 'carousel',
+            perView: 3
+        }
+
+        new Glide('.glide', config).mount();
 
 
     </script>
+    <style>
+        img {
+            height: 200px;
+            width: 400px;
+        }
+    </style>
 
 @endsection

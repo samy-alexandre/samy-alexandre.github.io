@@ -14,9 +14,15 @@
 
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/canvas.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/glide.core.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/glide.theme.min.css') }}" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.spline.design/lib/anime.min.js"></script>
     <script src=" {{ asset('js/spline.runtime.min.js') }}"></script>
+
+    <!-- JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="{{ asset('js/main.js') }}"></script>
 
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">

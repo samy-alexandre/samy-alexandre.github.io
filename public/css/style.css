@@ -1,11 +1,14 @@
 body {
     margin: 0;
     padding: 0;
+    cursor: context-menu;
 }
 
 .slide {
     width: 100vw;
     height: 100vh;
+    scroll-snap-align: center;
+
 }
 
 .wrapper {
@@ -14,10 +17,10 @@ body {
     width: 500vw;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
-
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 
 }
-
 
 
 .centered {
@@ -36,7 +39,6 @@ section {
     display: flex;
     min-height: 100vh;
 
-
 }
 
 
@@ -46,6 +48,7 @@ section .container {
     min-height: 550px;
     display: flex;
     z-index: 1000;
+    max-width: 1200px;
 
 }
 
@@ -251,6 +254,7 @@ section .container .contactForm .formBox .inputBox input[type="submit"]:hover {
     overflow-x: hidden;
     position: absolute;
     -ms-overflow-style: none;
+
 }
 
 ::-webkit-scrollbar {
@@ -293,9 +297,7 @@ nav ul li a {
     padding: 0 15px;
 }
 
-.outer-wrapper .wrapper img {
-    position: absolute;
-}
+
 
 .main-nav {
     position: fixed;
@@ -314,3 +316,5 @@ nav ul li a {
     display: flex;
 
 }
+
+
