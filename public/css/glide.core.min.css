@@ -21,7 +21,7 @@
     touch-action: pan-Y;
     overflow: hidden;
     padding: 0;
-    white-space: nowrap;
+
     display: flex;
     flex-wrap: nowrap;
 

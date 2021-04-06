@@ -37,7 +37,7 @@ section {
     justify-content: center;
     align-items: center;
     display: flex;
-    min-height: 100vh;
+    min-height: 80vh;
 
 }
 
@@ -257,7 +257,16 @@ section .container .contactForm .formBox .inputBox input[type="submit"]:hover {
 
 }
 
-::-webkit-scrollbar {
+.outer-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.ul__second::-webkit-scrollbar {
     display: none;
 }
 

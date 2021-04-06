@@ -3,6 +3,10 @@
 @section('content')
 
 
+    <div class="loader_bg">
+        <div class="loader "></div>
+    </div>
+
     <nav class="main-nav">
         <ul class="ul__first relative">
             <li id="logo">
@@ -20,33 +24,228 @@
     <canvas id="canvas3d" class="absolute"></canvas>
 
     <div class="outer-wrapper ">
-
         <div class="wrapper">
 
-
-            <div id="home" class="slide one flex  bg-blue-200">
-                <div class="cursor ">
+            <!-- Slide ONE -->
+            <div id="home" class="slide one flex">
+                <div class="relative  text-4xl w-full h-full self-center mx-auto flex flex-col">
+                    <p class="text-center  text-5xl custom-police pt-20 pb-20">BIENVENUE</p>
                 </div>
-                <p class="relative bg-white rounded-lg px-16 py-8 text-4xl self-center mx-auto">Voici mon accueil de
-                    BATARD </p>
             </div>
 
-            <div id="resume" class="slide two flex bg-blue-400">
-                <p class="relative bg-white rounded-lg px-16 py-8 text-4xl self-center mx-auto">La je parle de moi </p>
+            <!-- Slide TWO -->
+            <div id="resume" class="slide two flex">
+                <div class="relative  text-4xl w-full h-full self-center mx-auto flex flex-col">
+                    <p class="text-center  text-5xl custom-police pt-20 pb-20">À propos</p>
+                </div>
 
             </div>
 
+            <!-- Slide THREE -->
             <div id="projects" class="slide three flex">
-                <p class="relative bg-white rounded-lg px-16 py-8 text-4xl self-center mx-auto">Mes projets </p>
+                <div class="relative  text-4xl w-full h-full flex  justify-center ">
+
+                    <div class="flex w-1/3 h-screen">
+                        <p class="flex mx-auto  text-5xl custom-police self-center">Mes projets</p>
+                    </div>
+
+                    <!-- Projects -->
+
+                    <div class="flex w-2/3 h-screen ">
+                        <div
+                            class="w-5/6 mx-auto  h-5/6 self-center justify-center   flex">
+                            <!-- component -->
+                            <div class=" rounded-2xl w-full  overflow-auto custom-overflow ">
+
+                                <div class="flex  ">
+                                    <div
+                                        class="h-full text-left custom-height-project  w-full justify-end  ">
+                                        <div class="flex  ">
+                                            <div class="w-1/2 pl-5 pr-5 bg-white rounded-bl-2xl rounded-tl-2xl opacite-left  flex">
+                                                <img
+                                                    class="flex w-full h-5/6 rounded-2xl  object-cover relative self-center"
+                                                    src="https://d1fmx1rbmqrxrr.cloudfront.net/cnet/optim/i/edit/2019/04/eso1644bsmall__w770.jpg"
+                                                    alt="">
+
+                                            </div>
+                                            <div class="w-1/2 flex  p-5 bg-gray-300 opacite-right">
+                                                <div class="flex flex-col self-center">
+                                                    <div class="flex"><p class="flex text-sm text-justify">Lorem ipsum
+                                                            dolor sit amet, consectetur adipisicing elit. Corporis id
+                                                            pariatur ut voluptas? A deleniti, deserunt dolore, error
+                                                            fugit harum
+                                                            labore molestias nesciunt optio quas sit totam veritatis
+                                                            vero
+                                                            voluptatem.</p></div>
+                                                    <div class="flex h-20 mx-auto w-1/2 self-center "><a
+                                                            href="https://www.larousse.fr/dictionnaires/francais/Fe/33106"
+                                                            target="_blank"
+                                                            class="text-indigo-500 self-center mx-auto md:mb-2 lg:mb-0 px-2 py-1 border-2 border-indigo-500 rounded-full text-sm">accéder
+                                                            au projet 😎
+                                                        </a></div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="flex  ">
+                                    <div
+                                        class="h-full text-left custom-height-project  w-full justify-end  ">
+                                        <div class="flex  ">
+                                            <div class="w-1/2 pl-5 pr-5 bg-white rounded-bl-2xl rounded-tl-2xl opacite-left  flex">
+                                                <img
+                                                    class="flex w-full h-5/6 rounded-2xl  object-cover relative self-center"
+                                                    src="https://d1fmx1rbmqrxrr.cloudfront.net/cnet/optim/i/edit/2019/04/eso1644bsmall__w770.jpg"
+                                                    alt="">
+
+                                            </div>
+                                            <div class="w-1/2 flex  p-5 bg-gray-300 opacite-right">
+                                                <div class="flex flex-col self-center">
+                                                    <div class="flex"><p class="flex text-sm text-justify">Lorem ipsum
+                                                            dolor sit amet, consectetur adipisicing elit. Corporis id
+                                                            pariatur ut voluptas? A deleniti, deserunt dolore, error
+                                                            fugit harum
+                                                            labore molestias nesciunt optio quas sit totam veritatis
+                                                            vero
+                                                            voluptatem.</p></div>
+                                                    <div class="flex h-20 mx-auto w-1/2 self-center "><a
+                                                            href="https://www.larousse.fr/dictionnaires/francais/Fe/33106"
+                                                            target="_blank"
+                                                            class="text-indigo-500 self-center mx-auto md:mb-2 lg:mb-0 px-2 py-1 border-2 border-indigo-500 rounded-full text-sm">accéder
+                                                            au projet 😎
+                                                        </a></div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="flex  ">
+                                    <div
+                                        class="h-full text-left custom-height-project  w-full justify-end  ">
+                                        <div class="flex  ">
+                                            <div class="w-1/2 pl-5 pr-5 bg-white rounded-bl-2xl rounded-tl-2xl opacite-left  flex">
+                                                <img
+                                                    class="flex w-full h-5/6 rounded-2xl  object-cover relative self-center"
+                                                    src="https://d1fmx1rbmqrxrr.cloudfront.net/cnet/optim/i/edit/2019/04/eso1644bsmall__w770.jpg"
+                                                    alt="">
+
+                                            </div>
+                                            <div class="w-1/2 flex  p-5 bg-gray-300 opacite-right">
+                                                <div class="flex flex-col self-center">
+                                                    <div class="flex"><p class="flex text-sm text-justify">Lorem ipsum
+                                                            dolor sit amet, consectetur adipisicing elit. Corporis id
+                                                            pariatur ut voluptas? A deleniti, deserunt dolore, error
+                                                            fugit harum
+                                                            labore molestias nesciunt optio quas sit totam veritatis
+                                                            vero
+                                                            voluptatem.</p></div>
+                                                    <div class="flex h-20 mx-auto w-1/2 self-center "><a
+                                                            href="https://www.larousse.fr/dictionnaires/francais/Fe/33106"
+                                                            target="_blank"
+                                                            class="text-indigo-500 self-center mx-auto md:mb-2 lg:mb-0 px-2 py-1 border-2 border-indigo-500 rounded-full text-sm">accéder
+                                                            au projet 😎
+                                                        </a></div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="flex  ">
+                                    <div
+                                        class="h-full text-left custom-height-project  w-full justify-end  ">
+                                        <div class="flex  ">
+                                            <div class="w-1/2 pl-5 pr-5 bg-white rounded-bl-2xl rounded-tl-2xl opacite-left  flex">
+                                                <img
+                                                    class="flex w-full h-5/6 rounded-2xl  object-cover relative self-center"
+                                                    src="https://d1fmx1rbmqrxrr.cloudfront.net/cnet/optim/i/edit/2019/04/eso1644bsmall__w770.jpg"
+                                                    alt="">
+
+                                            </div>
+                                            <div class="w-1/2 flex  p-5 bg-gray-300 opacite-right">
+                                                <div class="flex flex-col self-center">
+                                                    <div class="flex"><p class="flex text-sm text-justify">Lorem ipsum
+                                                            dolor sit amet, consectetur adipisicing elit. Corporis id
+                                                            pariatur ut voluptas? A deleniti, deserunt dolore, error
+                                                            fugit harum
+                                                            labore molestias nesciunt optio quas sit totam veritatis
+                                                            vero
+                                                            voluptatem.</p></div>
+                                                    <div class="flex h-20 mx-auto w-1/2 self-center "><a
+                                                            href="https://www.larousse.fr/dictionnaires/francais/Fe/33106"
+                                                            target="_blank"
+                                                            class="text-indigo-500 self-center mx-auto md:mb-2 lg:mb-0 px-2 py-1 border-2 border-indigo-500 rounded-full text-sm">accéder
+                                                            au projet 😎
+                                                        </a></div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="flex  ">
+                                    <div
+                                        class="h-full text-left custom-height-project  w-full justify-end  ">
+                                        <div class="flex  ">
+                                            <div class="w-1/2 pl-5 pr-5 bg-white rounded-bl-2xl rounded-tl-2xl opacite-left  flex">
+                                                <img
+                                                    class="flex w-full h-5/6 rounded-2xl  object-cover relative self-center"
+                                                    src="https://d1fmx1rbmqrxrr.cloudfront.net/cnet/optim/i/edit/2019/04/eso1644bsmall__w770.jpg"
+                                                    alt="">
+
+                                            </div>
+                                            <div class="w-1/2 flex  p-5 bg-gray-300 opacite-right">
+                                                <div class="flex flex-col self-center">
+                                                    <div class="flex"><p class="flex text-sm text-justify">Lorem ipsum
+                                                            dolor sit amet, consectetur adipisicing elit. Corporis id
+                                                            pariatur ut voluptas? A deleniti, deserunt dolore, error
+                                                            fugit harum
+                                                            labore molestias nesciunt optio quas sit totam veritatis
+                                                            vero
+                                                            voluptatem.</p></div>
+                                                    <div class="flex h-20 mx-auto w-1/2 self-center "><a
+                                                            href="https://www.larousse.fr/dictionnaires/francais/Fe/33106"
+                                                            target="_blank"
+                                                            class="text-indigo-500 self-center mx-auto md:mb-2 lg:mb-0 px-2 py-1 border-2 border-indigo-500 rounded-full text-sm">accéder
+                                                            au projet 😎
+                                                        </a></div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
 
             <!-- Slide Tools -->
             <div id="tools" class="slide four flex">
-
-                <div class="relative   text-4xl w-full h-full self-center mx-auto flex">
+                <div class="relative  text-4xl w-full h-full self-center mx-auto flex flex-col">
+                    <p class="text-center  text-5xl custom-police pt-20 pb-20">Mes outils</p>
                     <div class="glide self-center mx-auto ">
-                        <div class="glide__track relative" data-glide-el="track">
+
+                        <div class="glide__track relative custom-police" data-glide-el="track">
                             <ul class="glide__slides  ">
                                 <li class="glide__slides relative  flex ">
                                     <div class="mx-auto  self-center ">
@@ -55,8 +254,29 @@
                                             class=" h-64   right-0  object-cover flex rounded-tr-xl rounded-tl-xl"
                                             alt="">
                                         <div
-                                            class=" h-64 bg-white opacity-75 rounded-br-xl rounded-bl-xl  text-center  ">
-                                            FIGMA
+                                            class="h-80  w-custom bg-white opacity-75 rounded-br-xl rounded-bl-xl  text-center">
+                                            <div class="h-1/6">
+                                                <h1 class="font-bold text-2xl">FIGMA</h1>
+                                                <p class="text-sm font-bold">Éditeur graphique</p>
+
+                                            </div>
+
+                                            <div class="h-3/6 pt-6">
+                                                <p class="text-justify text-sm pl-2 pr-2"> Figma est un éditeur de
+                                                    graphiques vectoriels et un outil de prototypage. Il est
+                                                    principalement basé sur le web, avec des fonctionnalités hors
+                                                    ligne
+                                                    supplémentaires activées par des applications de bureau pour
+                                                    macOS
+                                                    et Windows.</p>
+                                            </div>
+
+                                            <div class="h-2/6 flex self-center">
+                                                <a href="https://www.figma.com/" target="_blank"
+                                                   class="bg-purple-500 rounded-full py-1 px-4 text-center text-lg text-black hover:text-white hover:bg-purple-400 transition duration-200 ease-in-out mx-auto self-center">Voir
+                                                    plus</a>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </li>
@@ -67,8 +287,33 @@
                                             class=" h-64  right-0  object-cover flex rounded-tr-xl rounded-tl-xl"
                                             alt="">
                                         <div
-                                            class=" h-64 bg-white  opacity-75  rounded-br-xl rounded-bl-xl text-center">
-                                            SPLINE
+                                            class="h-80  w-custom bg-white opacity-75 rounded-br-xl rounded-bl-xl  text-center">
+                                            <div class="h-1/6">
+                                                <h1 class="font-bold text-2xl">SPLINE</h1>
+                                                <p class="text-sm font-bold">Éditeur 3D</p>
+
+                                            </div>
+
+                                            <div class="h-3/6 pt-6">
+                                                <p class="text-justify text-sm pl-2 pr-2"> Spline est un outil
+                                                    gratuit
+                                                    pour créer des expériences web en 3D.
+                                                    Il est possible d’ajouter des
+                                                    formes : cube, sphère, carré, rectangle, de les modifier
+                                                    (couleur,
+                                                    forme, bord…), du texte peut également être ajouté.
+                                                    Pour ceux qui souhaitent exporter leurs créations, une option
+                                                    est
+                                                    possible. Vous pouvez intégrer la
+                                                    création à un site web en copiant le code.</p>
+                                            </div>
+
+                                            <div class="h-2/6 flex self-center">
+                                                <a href="https://spline.design/" target="_blank"
+                                                   class="bg-purple-500 rounded-full py-1 px-4 text-center text-lg text-black hover:text-white hover:bg-purple-400 transition duration-200 ease-in-out mx-auto self-center">Voir
+                                                    plus</a>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </li>
@@ -79,8 +324,25 @@
                                             class=" h-64  right-0  object-cover flex rounded-tr-xl rounded-tl-xl"
                                             alt="">
                                         <div
-                                            class=" h-64 bg-white  opacity-75  rounded-br-xl rounded-bl-xl text-center">
-                                            CSS
+                                            class="h-80  w-custom bg-white opacity-75 rounded-br-xl rounded-bl-xl  text-center">
+                                            <div class="h-1/6">
+                                                <h1 class="font-bold text-2xl">CSS</h1>
+                                                <p class="text-sm font-bold">Langage</p>
+                                            </div>
+
+                                            <div class="h-3/6 pt-6">
+                                                <p class="text-justify text-sm pl-2 pr-2"> Le CSS est l'un des
+                                                    langages
+                                                    principaux du Web ouvert et a été standardisé par le W3C.</p>
+                                            </div>
+
+                                            <div class="h-2/6 flex self-center">
+                                                <a href="https://developer.mozilla.org/fr/docs/Web/CSS"
+                                                   target="_blank"
+                                                   class="bg-purple-500 rounded-full py-1 px-4 text-center text-lg text-black hover:text-white hover:bg-purple-400 transition duration-200 ease-in-out mx-auto self-center">Voir
+                                                    plus</a>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </li>
@@ -91,8 +353,27 @@
                                             class=" h-64  right-0  object-cover flex rounded-tr-xl rounded-tl-xl"
                                             alt="">
                                         <div
-                                            class=" h-64 bg-white  opacity-75 rounded-br-xl rounded-bl-xl text-center ">
-                                            HTML
+                                            class="h-80 w-custom bg-white opacity-75 rounded-br-xl rounded-bl-xl  text-center">
+                                            <div class="h-1/6 ">
+                                                <h1 class="font-bold text-2xl">HTML</h1>
+                                                <p class="text-sm font-bold">Langage balistique</p>
+                                            </div>
+
+                                            <div class="h-3/6 pt-6">
+                                                <p class="text-justify text-sm pl-2 pr-2">Il est utilisé afin de
+                                                    créer
+                                                    et de représenter le contenu d'une page web et sa structure.
+                                                    D'autres technologies sont utilisées avec HTML pour décrire la
+                                                    présentation d'une page.</p>
+                                            </div>
+
+                                            <div class="h-2/6 flex self-center">
+                                                <a href="https://developer.mozilla.org/fr/docs/Web/HTML"
+                                                   target="_blank"
+                                                   class="bg-purple-500 rounded-full py-1 px-4 text-center text-lg text-black hover:text-white hover:bg-purple-400 transition duration-200 ease-in-out mx-auto self-center">Voir
+                                                    plus</a>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </li>
@@ -103,8 +384,32 @@
                                             class=" h-64  right-0  object-cover flex rounded-tr-xl rounded-tl-xl"
                                             alt="">
                                         <div
-                                            class=" h-64 bg-white  opacity-75  rounded-br-xl rounded-bl-xl text-center">
-                                            JAVASCRIPT
+                                            class="h-80  w-custom bg-white opacity-75 rounded-br-xl rounded-bl-xl  text-center">
+                                            <div class="h-1/6">
+                                                <h1 class="font-bold text-2xl">JAVASCRIPT</h1>
+                                                <p class="text-sm font-bold">Langage</p>
+                                            </div>
+
+                                            <div class="h-3/6 pt-6">
+                                                <p class="text-justify text-sm pl-2 pr-2">Le JavaScrip est un
+                                                    langage de
+                                                    script léger, orienté objet,
+                                                    principalement connu comme le langage de script des pages web.
+                                                    C'est un langage à objets utilisant le concept de prototype,
+                                                    disposant d'un
+                                                    typage faible et dynamique qui permet de programmer suivant
+                                                    plusieurs paradigmes de programmation : fonctionnelle,
+                                                    impérative et
+                                                    orientée objet.</p>
+                                            </div>
+
+                                            <div class="h-2/6 flex self-center">
+                                                <a href="https://developer.mozilla.org/fr/docs/Web/javascript"
+                                                   target="_blank"
+                                                   class="bg-purple-500 rounded-full py-1 px-4 text-center text-lg text-black hover:text-white hover:bg-purple-400 transition duration-200 ease-in-out mx-auto self-center">Voir
+                                                    plus</a>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </li>
@@ -115,8 +420,27 @@
                                             class=" h-64  right-0  object-cover flex rounded-tr-xl rounded-tl-xl"
                                             alt="">
                                         <div
-                                            class=" h-64 bg-white  opacity-75  rounded-br-xl rounded-bl-xl text-center">
-                                            PHP
+                                            class="h-80  w-custom bg-white opacity-75 rounded-br-xl rounded-bl-xl  text-center">
+                                            <div class="h-1/6">
+                                                <h1 class="font-bold text-2xl">PHP</h1>
+                                                <p class="text-sm font-bold">Langage</p>
+                                            </div>
+
+                                            <div class="h-3/6 pt-6">
+                                                <p class="text-justify text-sm pl-2 pr-2">PHP est un langage de
+                                                    scripts
+                                                    généraliste et Open Source, spécialement conçu pour le
+                                                    développement
+                                                    d'applications web. Il peut être intégré facilement au HTML.</p>
+                                            </div>
+
+                                            <div class="h-2/6 flex self-center">
+                                                <a href="https://www.php.net/manual/fr/intro-whatis.php"
+                                                   target="_blank"
+                                                   class="bg-purple-500 rounded-full py-1 px-4 text-center text-lg text-black hover:text-white hover:bg-purple-400 transition duration-200 ease-in-out mx-auto self-center">Voir
+                                                    plus</a>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </li>
@@ -127,8 +451,28 @@
                                             class=" h-64  right-0  object-cover flex rounded-tr-xl rounded-tl-xl"
                                             alt="">
                                         <div
-                                            class=" h-64 bg-white  opacity-75  rounded-br-xl rounded-bl-xl text-center ">
-                                            LARAVEL
+                                            class="h-80  w-custom bg-white opacity-75 rounded-br-xl rounded-bl-xl  text-center">
+                                            <div class="h-1/6">
+                                                <h1 class="font-bold text-2xl">LARAVEL</h1>
+                                                <p class="text-sm font-bold">Framework Backend</p>
+                                            </div>
+
+                                            <div class="h-3/6 pt-6">
+                                                <p class="text-justify text-sm pl-2 pr-2">Laravel est un framework
+                                                    d'application Web avec une syntaxe expressive et élégante. Un
+                                                    framework Web fournit une structure et un point de départ pour
+                                                    créer
+                                                    votre application, vous permettant de vous concentrer sur la
+                                                    création de quelque chose d'extraordinaire pendant que nous
+                                                    transpirons les détails.</p>
+                                            </div>
+
+                                            <div class="h-2/6 flex self-center">
+                                                <a href="https://laravel.com/docs/8.x#why-laravel" target="_blank"
+                                                   class="bg-purple-500 rounded-full py-1 px-4 text-center text-lg text-black hover:text-white hover:bg-purple-400 transition duration-200 ease-in-out mx-auto self-center">Voir
+                                                    plus</a>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </li>
@@ -139,8 +483,27 @@
                                             class=" h-64  right-0  object-cover flex rounded-tr-xl rounded-tl-xl"
                                             alt="">
                                         <div
-                                            class=" h-64 bg-white  opacity-75  rounded-br-xl rounded-bl-xl text-center ">
-                                            NUXT
+                                            class="h-80  w-custom bg-white opacity-75 rounded-br-xl rounded-bl-xl  text-center">
+                                            <div class="h-1/6">
+                                                <h1 class="font-bold text-2xl">NUXT</h1>
+                                                <p class="text-sm font-bold">Framework Frontend</p>
+                                            </div>
+
+                                            <div class="h-3/6 pt-6">
+                                                <p class="text-justify text-sm pl-2 pr-2">Construisez votre
+                                                    prochaine
+                                                    application Vue.js en toute confiance en utilisant NuxtJS. Un
+                                                    framework open source qui rend le développement web simple et
+                                                    puissant.</p>
+                                            </div>
+
+                                            <div class="h-2/6 flex self-center">
+                                                <a href="https://fr.nuxtjs.org/docs/2.x/get-started/installation"
+                                                   target="_blank"
+                                                   class="bg-purple-500 rounded-full py-1 px-4 text-center text-lg text-black hover:text-white hover:bg-purple-400 transition duration-200 ease-in-out mx-auto self-center">Voir
+                                                    plus</a>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </li>
@@ -151,8 +514,30 @@
                                             class=" h-64  right-0  object-cover flex rounded-tr-xl rounded-tl-xl"
                                             alt="">
                                         <div
-                                            class=" h-64 bg-white opacity-75  rounded-br-xl rounded-bl-xl text-center ">
-                                            TAILWINDCSS
+                                            class="h-80  w-custom bg-white opacity-75 rounded-br-xl rounded-bl-xl  text-center">
+                                            <div class="h-1/6">
+                                                <h1 class="font-bold text-2xl">TAILWINDCSS</h1>
+                                                <p class="text-sm font-bold">Framework CSS</p>
+
+
+                                            </div>
+
+                                            <div class="h-3/6 pt-6">
+                                                <p class="text-justify text-sm pl-2 pr-2"> Tailwind CSS est un
+                                                    framework
+                                                    CSS de bas niveau, hautement personnalisable, qui vous donne
+                                                    tous
+                                                    les éléments de base dont vous avez besoin pour créer des
+                                                    conceptions sur mesure sans avoir à vous battre avec des styles
+                                                    préexistants par défaut.</p>
+                                            </div>
+
+                                            <div class="h-2/6 flex self-center">
+                                                <a href="https://tailwindcss.com/docs" target="_blank"
+                                                   class="bg-purple-500 rounded-full py-1 px-4 text-center text-lg text-black hover:text-white hover:bg-purple-400 transition duration-200 ease-in-out mx-auto self-center">Voir
+                                                    plus</a>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </li>
@@ -160,8 +545,14 @@
                             </ul>
                         </div>
                         <div class="glide__arrows" data-glide-el="controls">
-                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
-                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+                            <button
+                                class="glide__arrow glide__arrow--left transform hover:scale-125 transition duration-300"
+                                data-glide-dir="<"><
+                            </button>
+                            <button
+                                class="glide__arrow glide__arrow--right transform hover:scale-125 transition duration-300"
+                                data-glide-dir=">">>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -169,7 +560,9 @@
 
             <!-- Slide 5 -->
             <div id="contact" class="slide five">
+                <p class="text-center  text-5xl custom-police pt-20 py-8   ">Contactez-moi 📞</p>
                 <section class="">
+
                     <div class="container">
                         <div class="contactinfo  reveal-1 rounded-xl">
                             <div>
@@ -243,7 +636,8 @@
                         </div>
                         <div class="contactForm rounded-xl reveal-2">
 
-                            <form class="formBox" id="Contact" action="https://formspree.io/f/xbjqrkvo" method="POST">
+                            <form class="formBox" id="Contact" action="https://formspree.io/f/xbjqrkvo"
+                                  method="POST">
                                 <div class="inputBox  w50 pt-4">
                                     <input maxlength="25" type="text" name="Prénom" id="prenom" required>
                                     <span>Prénom</span>
@@ -278,7 +672,25 @@
         </div>
     </div>
 
+
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script async>
+
+        // On load
+        setTimeout(function () {
+
+            $('.loader').fadeToggle();
+        }, 0);
+
+        setTimeout(function () {
+
+            $('.loader_bg').fadeToggle();
+        }, 0);
 
 
         // five slide
@@ -327,6 +739,50 @@
             height: 200px;
             width: 400px;
         }
+
+        .w-custom {
+            width: 400px;
+        }
+
+        .custom-police {
+            font-family: 'Century Gothic';
+        }
+        .custom-height-project {
+            max-height: 410px;
+            min-height: 410px;
+        }
+
+        /* width */
+        .custom-overflow::-webkit-scrollbar {
+            width: 10px;
+
+        }
+
+        /* Track */
+        .custom-overflow::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        /* Handle */
+        .custom-overflow::-webkit-scrollbar-thumb {
+            background: dodgerblue;
+        }
+
+        /* Handle on hover */
+        .custom-overflow::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .opacite-right {
+            background-color: rgb(255, 255, 255); /* alternative solide */
+            background-color: rgba(255, 255, 255, 0.75);
+        }
+        .opacite-left {
+            background-color: rgb(255, 255, 255); /* alternative solide */
+            background-color: rgba(255, 255, 255, 0.75);
+        }
+
+
     </style>
 
 @endsection
