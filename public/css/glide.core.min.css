@@ -14,7 +14,7 @@
 
 .glide__slides {
     position: relative;
-
+    user-select : none;
     list-style: none;
     backface-visibility: hidden;
     transform-style: preserve-3d;

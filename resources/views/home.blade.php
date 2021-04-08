@@ -685,12 +685,12 @@
         setTimeout(function () {
 
             $('.loader').fadeToggle();
-        }, 0);
+        }, 2000);
 
         setTimeout(function () {
 
             $('.loader_bg').fadeToggle();
-        }, 0);
+        }, 2000);
 
 
         // five slide
@@ -754,7 +754,8 @@
 
         /* width */
         .custom-overflow::-webkit-scrollbar {
-            width: 10px;
+            width: 5px;
+
 
         }
 
@@ -766,6 +767,7 @@
         /* Handle */
         .custom-overflow::-webkit-scrollbar-thumb {
             background: dodgerblue;
+            border-radius: 50px;
         }
 
         /* Handle on hover */

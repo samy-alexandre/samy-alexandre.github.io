@@ -270,6 +270,9 @@ section .container .contactForm .formBox .inputBox input[type="submit"]:hover {
     display: none;
 }
 
+.ul__first::-webkit-scrollbar {
+    display: none;
+}
 
 * {
     margin: 0;
