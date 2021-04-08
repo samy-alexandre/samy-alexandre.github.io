@@ -1,3 +1,3 @@
 const app = new SpeRuntime.Application();
-app.start('./scene.gltf');
+app.start('./scene.json');
 

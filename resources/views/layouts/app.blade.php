@@ -25,7 +25,7 @@
 
 
     <!-- JavaScript -->
-
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="{{ asset('js/main.js') }}"></script>
 

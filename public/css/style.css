@@ -295,7 +295,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 nav ul li a {
@@ -305,8 +305,8 @@ nav ul li a {
 }
 
 #logo {
-    border: 1px solid black;
-    padding: 0 15px;
+    padding: 10px 10px;
+
 }
 
 
@@ -326,6 +326,7 @@ nav ul li a {
 .main-nav .ul__first {
     position: fixed;
     display: flex;
+    cursor: pointer;
 
 }
 
