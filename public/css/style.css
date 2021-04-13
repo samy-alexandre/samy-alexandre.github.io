@@ -17,7 +17,7 @@ body {
     width: 500vw;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
-    overflow-y: scroll;
+    overflow-y: hidden;
     scroll-snap-type: y mandatory;
 
 }
@@ -140,11 +140,14 @@ section .container .contactForm {
     position: absolute;
     padding-top: 35px;
     padding-right: 35px;
+    border: 1px solid midnightblue;
     background: #ffffff;
     margin-left: 150px;
     padding-left: 250px;
     width: calc(100% - 150px);
     height: 100%;
+
+
 }
 
 
@@ -155,6 +158,7 @@ section .container .contactForm .formBox {
     justify-content: space-between;
     padding-top: 30px;
     flex-wrap: wrap;
+
 }
 
 section .container .contactForm .formBox .inputBox {
@@ -250,7 +254,7 @@ section .container .contactForm .formBox .inputBox input[type="submit"]:hover {
     height: 100vw;
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
     position: absolute;
     -ms-overflow-style: none;
@@ -295,9 +299,13 @@ nav ul li {
 }
 
 nav ul li:hover {
-    transform: scale(1.2);
+    transform: scale(1.40);
+
 }
 
+nav ul li::-webkit-scrollbar {
+    display: none;
+}
 nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
@@ -305,10 +313,13 @@ nav ul li a {
 
 }
 
-#logo {
+
+#logo::-webkit-scrollbar {
     padding: 10px 10px;
+    display: none;
 
 }
+
 
 
 
@@ -327,6 +338,7 @@ nav ul li a {
 .main-nav .ul__first {
     position: fixed;
     display: flex;
+    left: 0;
 
 
 }
