@@ -302,6 +302,7 @@ nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
     color: black;
+
 }
 
 #logo {
@@ -326,7 +327,7 @@ nav ul li a {
 .main-nav .ul__first {
     position: fixed;
     display: flex;
-    cursor: pointer;
+
 
 }
 

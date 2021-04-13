@@ -14,7 +14,7 @@
 
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/loader.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/project.css') }}" rel="stylesheet">
+
 
     <link href="{{ asset('css/canvas.css') }}" rel="stylesheet">
     <link href="{{ asset('css/glide.core.min.css') }}" rel="stylesheet">
