@@ -22,6 +22,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.spline.design/lib/anime.min.js"></script>
     <script src=" {{ asset('js/spline.runtime.min.js') }}"></script>
+    <script src=" {{ asset('js/panda.js') }}"></script>
 
 
     <!-- JavaScript -->

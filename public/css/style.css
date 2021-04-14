@@ -31,7 +31,6 @@ body {
 }
 
 
-
 section {
     position: relative;
     justify-content: center;
@@ -234,18 +233,29 @@ section .container .contactForm .formBox .inputBox input[type="submit"]:hover {
     opacity: 0;
     transform: translate3d(0, -300px, 0);
     transition-delay: 2.5s;
+    transition: 2s cubic-bezier(.5, 0, 0, 1);
 }
 
 .reveal-2 {
     opacity: 0;
     transform: translate3d(800px, 0, 0);
     transition-delay: 0.8s;
+    transition: 2s cubic-bezier(.5, 0, 0, 1);
 }
+
+.reveal-parcours {
+    opacity: 0;
+    transform: translate3d(0, 600px, 0);
+    transition-delay: 4s;
+    transition: 10s cubic-bezier(.5, 0, 0, 1);
+
+}
+
 
 .reveal-visible {
     opacity: 1;
     transform: translateX(0);
-    transition: 2s cubic-bezier(.5, 0, 0, 1);
+
 }
 
 
@@ -306,6 +316,7 @@ nav ul li:hover {
 nav ul li::-webkit-scrollbar {
     display: none;
 }
+
 nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
@@ -321,8 +332,6 @@ nav ul li a {
 }
 
 
-
-
 .main-nav {
     position: fixed;
     display: flex;
@@ -335,6 +344,7 @@ nav ul li a {
     display: flex;
     right: 4em;
 }
+
 .main-nav .ul__first {
     position: fixed;
     display: flex;
