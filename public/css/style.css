@@ -246,8 +246,7 @@ section .container .contactForm .formBox .inputBox input[type="submit"]:hover {
 .reveal-parcours {
     opacity: 0;
     transform: translate3d(0, 600px, 0);
-    transition-delay: 4s;
-    transition: 10s cubic-bezier(.5, 0, 0, 1);
+    transition-duration: 5s;
 
 }
 
