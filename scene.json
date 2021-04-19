@@ -2495,7 +2495,7 @@
         {
             "type": "perspective",
             "perspective": {
-                "aspectRatio": 1.7777777777777777,
+                "aspectRatio": 1.902097902097902,
                 "yfov": 0.7853981633974483,
                 "znear": 50,
                 "zfar": 100000
@@ -6955,7 +6955,7 @@
                             "targets": [
                                 {
                                     "easing": 0,
-                                    "duration": 30000,
+                                    "duration": 20000,
                                     "delay": 7000,
                                     "cubicControls": [
                                         0.5,
