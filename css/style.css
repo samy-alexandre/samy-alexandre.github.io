@@ -334,14 +334,14 @@ nav ul li a {
 .main-nav {
     position: fixed;
     display: flex;
-    padding: 2em;
+    padding: 1.5%;
     z-index: 12;
 }
 
 .main-nav .ul__second {
     position: fixed;
     display: flex;
-    right: 4em;
+    right: 2%;
 }
 
 .main-nav .ul__first {

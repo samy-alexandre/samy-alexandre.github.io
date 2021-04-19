@@ -40,13 +40,13 @@
 </div>
 
 <nav class="main-nav">
-    <ul class="ul__first relative -mt-10    rounded-lg">
+    <ul class="ul__first relative mt-panda">
         <li id="logo " class="rounded-full  ">
             <a href="#" class="rounded-lg ">
                 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                 <lottie-player background="transparent" speed="1" style="width: 180px; height: 180px;" class="-m-12  "
                                hover
-                               ></lottie-player>
+                ></lottie-player>
             </a>
         </li>
     </ul>
@@ -76,8 +76,8 @@
             <div id="home" class="slide w-custom1 one flex">
 
                 <div class="relative  text-4xl w-full h-full  self-center mx-auto flex flex-col">
-                    <p class="text-center delay-150 text-5xl first-title custom-police pt-20 pb-8">BIENVENUE</p>
-                    <h1 class="text-center delay-150 text-5xl first-title custom-police  ">BIENVENUE</h1>
+                    <p class="text-center first-title">BIENVENUE</p>
+                    <h1 class="text-center delay-150 second-title ">BIENVENUE</h1>
                     <a href="#resume" class="cursor-none">
                         <div class="transform rotate-90 absolute-custom cursor-none ">
                             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -887,7 +887,7 @@
 
     const player = document.querySelector("lottie-player");
 
-     player.load("https://assets9.lottiefiles.com/packages/lf20_puwecidm.json");
+    player.load("https://assets9.lottiefiles.com/packages/lf20_puwecidm.json");
 
 
     const btn = document.querySelector('.button1');
@@ -916,8 +916,6 @@
 
     const app = new SpeRuntime.Application();
     app.start('./scene.json');
-
-
 
 
 </script>
@@ -1043,6 +1041,29 @@
 
     .no-scrollBar::-webkit-scrollbar {
         display: none;
+    }
+
+
+    /* Panda */
+
+    .mt-panda {
+        margin-top: -2%;
+    }
+
+    /* Titre Bienvenue */
+
+    .first-title {
+        font-family: 'Century Gothic';
+        padding-top: 5%;
+        padding-bottom: 2%;
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    .second-title {
+        font-family: 'Century Gothic';
+        font-size: 3rem;
+        line-height: 1;
     }
 
 
