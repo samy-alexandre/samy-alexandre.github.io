@@ -26,15 +26,16 @@
 }
 
 .glide__arrow--left {
-    left: 17em
+    left: 32%
+
 }
 
 .glide__arrow--right {
-    right: 17em
+    right: 32%
 }
 
 .glide__arrow--disabled {
-    opacity: 0.33
+    opacity: 0.33;
 }
 
 .glide__bullets {
